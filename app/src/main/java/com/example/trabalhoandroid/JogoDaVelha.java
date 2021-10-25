@@ -52,7 +52,7 @@ public class JogoDaVelha extends AppCompatActivity {
                 checkBotoes[0] = 1;
                 jogadas++;
                 inteligenciaArtificial(btns, checkBotoes);
-                checkTabuleiro(checkBotoes, "VENCEU!");
+                checkTabuleiro(checkBotoes);
             }
         });
         btnA2.setOnClickListener(new View.OnClickListener() {
@@ -63,7 +63,7 @@ public class JogoDaVelha extends AppCompatActivity {
                 checkBotoes[1] = 1;
                 jogadas++;
                 inteligenciaArtificial(btns, checkBotoes);
-                checkTabuleiro(checkBotoes, "VENCEU!");
+                checkTabuleiro(checkBotoes);
             }
         });
         btnA3.setOnClickListener(new View.OnClickListener() {
@@ -74,7 +74,7 @@ public class JogoDaVelha extends AppCompatActivity {
                 checkBotoes[2] = 1;
                 jogadas++;
                 inteligenciaArtificial(btns, checkBotoes);
-                checkTabuleiro(checkBotoes, "VENCEU!");
+                checkTabuleiro(checkBotoes);
             }
         });
         btnA4.setOnClickListener(new View.OnClickListener() {
@@ -85,7 +85,7 @@ public class JogoDaVelha extends AppCompatActivity {
                 checkBotoes[3] = 1;
                 jogadas++;
                 inteligenciaArtificial(btns, checkBotoes);
-                checkTabuleiro(checkBotoes, "VENCEU!");
+                checkTabuleiro(checkBotoes);
             }
         });
         btnA5.setOnClickListener(new View.OnClickListener() {
@@ -96,7 +96,7 @@ public class JogoDaVelha extends AppCompatActivity {
                 checkBotoes[4] = 1;
                 jogadas++;
                 inteligenciaArtificial(btns, checkBotoes);
-                checkTabuleiro(checkBotoes, "VENCEU!");
+                checkTabuleiro(checkBotoes);
             }
         });
         btnA6.setOnClickListener(new View.OnClickListener() {
@@ -107,7 +107,7 @@ public class JogoDaVelha extends AppCompatActivity {
                 checkBotoes[5] = 1;
                 jogadas++;
                 inteligenciaArtificial(btns, checkBotoes);
-                checkTabuleiro(checkBotoes, "VENCEU!");
+                checkTabuleiro(checkBotoes);
             }
         });
         btnA7.setOnClickListener(new View.OnClickListener() {
@@ -118,7 +118,7 @@ public class JogoDaVelha extends AppCompatActivity {
                 checkBotoes[6] = 1;
                 jogadas++;
                 inteligenciaArtificial(btns, checkBotoes);
-                checkTabuleiro(checkBotoes, "VENCEU!");
+                checkTabuleiro(checkBotoes);
             }
         });
         btnA8.setOnClickListener(new View.OnClickListener() {
@@ -129,7 +129,7 @@ public class JogoDaVelha extends AppCompatActivity {
                 checkBotoes[7] = 1;
                 jogadas++;
                 inteligenciaArtificial(btns, checkBotoes);
-                checkTabuleiro(checkBotoes, "VENCEU!");
+                checkTabuleiro(checkBotoes);
             }
         });
         btnA9.setOnClickListener(new View.OnClickListener() {
@@ -140,61 +140,64 @@ public class JogoDaVelha extends AppCompatActivity {
                 checkBotoes[8] = 1;
                 jogadas++;
                 inteligenciaArtificial(btns, checkBotoes);
-                checkTabuleiro(checkBotoes, "VENCEU!");
+                checkTabuleiro(checkBotoes);
             }
         });
     }
 
     // confere o tabuleiro para ver se o usuario venceu
-    public void checkTabuleiro(int[] tab, String message)
+    public void checkTabuleiro(int[] tab)
     {
         if (tab[0] == 1 && tab[1] == 1 && tab[2] == 1)
-            alert(message);
+            alert("VENCEU!");
 
         else if (tab[3]  == 1 && tab[4] == 1 && tab[5] == 1)
-            alert(message);
+            alert("VENCEU!");
 
         else if (tab[6] == 1 && tab[7] == 1 && tab[8] == 1)
-            alert(message);
+            alert("VENCEU!");
 
         else if (tab[0]  == 1 && tab[3]  == 1 && tab[6]  == 1)
-            alert(message);
+            alert("VENCEU!");
 
         else if (tab[1] == 1&& tab[4] == 1 && tab[7] == 1)
-            alert(message);
+            alert("VENCEU!");
 
         else if (tab[2] == 1 && tab[5] == 1 && tab[8] == 1)
-            alert(message);
+            alert("VENCEU!");
 
         else if (tab[0] == 1 && tab[4] == 1 && tab[8] == 1)
-            alert(message);
+            alert("VENCEU!");
 
         else if (tab[2] == 1 && tab[4] == 1 && tab[6] == 1)
-            alert(message);
+            alert("VENCEU!");
 
         else if (tab[0] == 2 && tab[1] == 2 && tab[2] == 2)
-            alert(message);
+            alert("PERDEU!");
 
         else if (tab[3]  == 2 && tab[4] == 2 && tab[5] == 2)
-            alert(message);
+            alert("PERDEU!");
 
         else if (tab[6] == 2 && tab[7] == 2 && tab[8] == 2)
-            alert(message);
+            alert("PERDEU!");
 
         else if (tab[0]  == 2 && tab[3]  == 2 && tab[6]  == 2)
-            alert(message);
+            alert("PERDEU!");
 
         else if (tab[1] == 2 && tab[4] == 2 && tab[7] == 2)
-            alert(message);
+            alert("PERDEU!");
 
         else if (tab[2] == 2 && tab[5] == 2 && tab[8] == 2)
-            alert(message);
+            alert("PERDEU!");
 
         else if (tab[0] == 2 && tab[4] == 2 && tab[8] == 2)
-            alert(message);
+            alert("PERDEU!");
 
         else if (tab[2] == 2 && tab[4] == 2 && tab[6] == 2)
-            alert(message);
+            alert("PERDEU!");
+
+        else if (jogadas == 9)
+            alert("VELHA!");
     }
 
     public void inteligenciaArtificial(ImageButton[] btns, int[] checkBotoes)
@@ -210,7 +213,7 @@ public class JogoDaVelha extends AppCompatActivity {
                 botao.setImageResource(R.drawable.circulo);
                 checkBotoes[rand] = 2;
                 jogadas++;
-                checkTabuleiro(checkBotoes, "PERDEU!");
+                checkTabuleiro(checkBotoes);
                 break;
             }
         }
