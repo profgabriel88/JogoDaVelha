@@ -1,10 +1,14 @@
 package com.example.trabalhoandroid;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import java.util.Random;
@@ -12,6 +16,9 @@ import java.util.Random;
 public class JogoDaVelha extends AppCompatActivity {
     // casas do tabuleiro
     private ImageButton btnA1, btnA2, btnA3, btnA4, btnA5, btnA6, btnA7, btnA8, btnA9;
+
+    // textview para msotrar o nome do usuario
+    private TextView usrText;
 
     // matriz representando o tabuleiro para conferencia
     private int[][] tabuleiro = {{0, 0, 0}, {0, 0, 0}, {0, 0, 0}};
@@ -35,6 +42,11 @@ public class JogoDaVelha extends AppCompatActivity {
         btnA7 = findViewById(R.id.btnA7);
         btnA8 = findViewById(R.id.btnA8);
         btnA9 = findViewById(R.id.btnA9);
+
+        usrText = findViewById(R.id.usrText);
+
+
+        usrText.setText(getIntent().getStringExtra("chave_usuario"));
 
         // vetor de botões para uso da IA
         ImageButton[] btns = {btnA1, btnA2, btnA3, btnA4, btnA5, btnA6, btnA7, btnA8, btnA9};
@@ -148,56 +160,107 @@ public class JogoDaVelha extends AppCompatActivity {
     // confere o tabuleiro para ver se o usuario venceu
     public void checkTabuleiro(int[] tab)
     {
-        if (tab[0] == 1 && tab[1] == 1 && tab[2] == 1)
+        if (tab[0] == 1 && tab[1] == 1 && tab[2] == 1) {
             alert("VENCEU!");
+            finish();
+            startActivity(getIntent());
+        }
 
-        else if (tab[3]  == 1 && tab[4] == 1 && tab[5] == 1)
+        else if (tab[3]  == 1 && tab[4] == 1 && tab[5] == 1) {
             alert("VENCEU!");
+            finish();
+            startActivity(getIntent());
+        }
 
-        else if (tab[6] == 1 && tab[7] == 1 && tab[8] == 1)
+        else if (tab[6] == 1 && tab[7] == 1 && tab[8] == 1) {
             alert("VENCEU!");
+            finish();
+            startActivity(getIntent());
+        }
 
-        else if (tab[0]  == 1 && tab[3]  == 1 && tab[6]  == 1)
+        else if (tab[0]  == 1 && tab[3]  == 1 && tab[6]  == 1) {
             alert("VENCEU!");
+            finish();
+            startActivity(getIntent());
+        }
 
-        else if (tab[1] == 1&& tab[4] == 1 && tab[7] == 1)
+        else if (tab[1] == 1&& tab[4] == 1 && tab[7] == 1) {
             alert("VENCEU!");
+            finish();
+            startActivity(getIntent());
+        }
 
-        else if (tab[2] == 1 && tab[5] == 1 && tab[8] == 1)
+        else if (tab[2] == 1 && tab[5] == 1 && tab[8] == 1) {
             alert("VENCEU!");
+            finish();
+            startActivity(getIntent());
+        }
 
-        else if (tab[0] == 1 && tab[4] == 1 && tab[8] == 1)
+        else if (tab[0] == 1 && tab[4] == 1 && tab[8] == 1) {
             alert("VENCEU!");
+            finish();
+            startActivity(getIntent());
+        }
 
-        else if (tab[2] == 1 && tab[4] == 1 && tab[6] == 1)
+        else if (tab[2] == 1 && tab[4] == 1 && tab[6] == 1) {
             alert("VENCEU!");
+            finish();
+            startActivity(getIntent());
+        }
 
-        else if (tab[0] == 2 && tab[1] == 2 && tab[2] == 2)
+        else if (tab[0] == 2 && tab[1] == 2 && tab[2] == 2) {
             alert("PERDEU!");
+            finish();
+            startActivity(getIntent());
+        }
 
-        else if (tab[3]  == 2 && tab[4] == 2 && tab[5] == 2)
+        else if (tab[3]  == 2 && tab[4] == 2 && tab[5] == 2) {
             alert("PERDEU!");
+            finish();
+            startActivity(getIntent());
+        }
 
-        else if (tab[6] == 2 && tab[7] == 2 && tab[8] == 2)
+        else if (tab[6] == 2 && tab[7] == 2 && tab[8] == 2) {
             alert("PERDEU!");
+            finish();
+            startActivity(getIntent());
+        }
 
-        else if (tab[0]  == 2 && tab[3]  == 2 && tab[6]  == 2)
+        else if (tab[0] == 2 && tab[3]  == 2 && tab[6]  == 2) {
             alert("PERDEU!");
+            finish();
+            startActivity(getIntent());
+        }
 
-        else if (tab[1] == 2 && tab[4] == 2 && tab[7] == 2)
+        else if (tab[1] == 2 && tab[4] == 2 && tab[7] == 2) {
             alert("PERDEU!");
+            finish();
+            startActivity(getIntent());
+        }
 
-        else if (tab[2] == 2 && tab[5] == 2 && tab[8] == 2)
+        else if (tab[2] == 2 && tab[5] == 2 && tab[8] == 2) {
             alert("PERDEU!");
+            finish();
+            startActivity(getIntent());
+        }
 
-        else if (tab[0] == 2 && tab[4] == 2 && tab[8] == 2)
+        else if (tab[0] == 2 && tab[4] == 2 && tab[8] == 2) {
             alert("PERDEU!");
+            finish();
+            startActivity(getIntent());
+        }
 
-        else if (tab[2] == 2 && tab[4] == 2 && tab[6] == 2)
+        else if (tab[2] == 2 && tab[4] == 2 && tab[6] == 2) {
             alert("PERDEU!");
+            finish();
+            startActivity(getIntent());
+        }
 
-        else if (jogadas == 9)
+        else if (jogadas == 9) {
             alert("VELHA!");
+            finish();
+            startActivity(getIntent());
+        }
     }
 
     public void inteligenciaArtificial(ImageButton[] btns, int[] checkBotoes)
