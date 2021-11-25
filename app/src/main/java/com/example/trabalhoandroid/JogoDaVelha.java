@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -65,6 +66,8 @@ public class JogoDaVelha extends AppCompatActivity {
                 jogadas++;
                 inteligenciaArtificial(btns, checkBotoes);
                 checkTabuleiro(checkBotoes);
+                final MediaPlayer mp = MediaPlayer.create(getApplicationContext(), R.raw.biip);
+                mp.start();
             }
         });
         btnA2.setOnClickListener(new View.OnClickListener() {
@@ -76,6 +79,8 @@ public class JogoDaVelha extends AppCompatActivity {
                 jogadas++;
                 inteligenciaArtificial(btns, checkBotoes);
                 checkTabuleiro(checkBotoes);
+                final MediaPlayer mp = MediaPlayer.create(getApplicationContext(), R.raw.biip);
+                mp.start();
             }
         });
         btnA3.setOnClickListener(new View.OnClickListener() {
@@ -87,6 +92,8 @@ public class JogoDaVelha extends AppCompatActivity {
                 jogadas++;
                 inteligenciaArtificial(btns, checkBotoes);
                 checkTabuleiro(checkBotoes);
+                final MediaPlayer mp = MediaPlayer.create(getApplicationContext(), R.raw.biip);
+                mp.start();
             }
         });
         btnA4.setOnClickListener(new View.OnClickListener() {
@@ -98,6 +105,8 @@ public class JogoDaVelha extends AppCompatActivity {
                 jogadas++;
                 inteligenciaArtificial(btns, checkBotoes);
                 checkTabuleiro(checkBotoes);
+                final MediaPlayer mp = MediaPlayer.create(getApplicationContext(), R.raw.biip);
+                mp.start();
             }
         });
         btnA5.setOnClickListener(new View.OnClickListener() {
@@ -109,6 +118,8 @@ public class JogoDaVelha extends AppCompatActivity {
                 jogadas++;
                 inteligenciaArtificial(btns, checkBotoes);
                 checkTabuleiro(checkBotoes);
+                final MediaPlayer mp = MediaPlayer.create(getApplicationContext(), R.raw.biip);
+                mp.start();
             }
         });
         btnA6.setOnClickListener(new View.OnClickListener() {
@@ -120,6 +131,8 @@ public class JogoDaVelha extends AppCompatActivity {
                 jogadas++;
                 inteligenciaArtificial(btns, checkBotoes);
                 checkTabuleiro(checkBotoes);
+                final MediaPlayer mp = MediaPlayer.create(getApplicationContext(), R.raw.biip);
+                mp.start();
             }
         });
         btnA7.setOnClickListener(new View.OnClickListener() {
@@ -131,6 +144,8 @@ public class JogoDaVelha extends AppCompatActivity {
                 jogadas++;
                 inteligenciaArtificial(btns, checkBotoes);
                 checkTabuleiro(checkBotoes);
+                final MediaPlayer mp = MediaPlayer.create(getApplicationContext(), R.raw.biip);
+                mp.start();
             }
         });
         btnA8.setOnClickListener(new View.OnClickListener() {
@@ -142,6 +157,8 @@ public class JogoDaVelha extends AppCompatActivity {
                 jogadas++;
                 inteligenciaArtificial(btns, checkBotoes);
                 checkTabuleiro(checkBotoes);
+                final MediaPlayer mp = MediaPlayer.create(getApplicationContext(), R.raw.biip);
+                mp.start();
             }
         });
         btnA9.setOnClickListener(new View.OnClickListener() {
@@ -153,6 +170,8 @@ public class JogoDaVelha extends AppCompatActivity {
                 jogadas++;
                 inteligenciaArtificial(btns, checkBotoes);
                 checkTabuleiro(checkBotoes);
+                final MediaPlayer mp = MediaPlayer.create(getApplicationContext(), R.raw.biip);
+                mp.start();
             }
         });
     }
@@ -164,6 +183,7 @@ public class JogoDaVelha extends AppCompatActivity {
             alert("VENCEU!");
             finish();
             startActivity(getIntent());
+
         }
 
         else if (tab[3]  == 1 && tab[4] == 1 && tab[5] == 1) {
