@@ -183,6 +183,8 @@ public class JogoDaVelha extends AppCompatActivity {
             alert("VENCEU!");
             finish();
             startActivity(getIntent());
+            final MediaPlayer mp = MediaPlayer.create(getApplicationContext(), R.raw.vitoria);
+            mp.start();
 
         }
 
@@ -190,90 +192,120 @@ public class JogoDaVelha extends AppCompatActivity {
             alert("VENCEU!");
             finish();
             startActivity(getIntent());
+            final MediaPlayer mp = MediaPlayer.create(getApplicationContext(), R.raw.vitoria);
+            mp.start();
         }
 
         else if (tab[6] == 1 && tab[7] == 1 && tab[8] == 1) {
             alert("VENCEU!");
             finish();
             startActivity(getIntent());
+            final MediaPlayer mp = MediaPlayer.create(getApplicationContext(), R.raw.vitoria);
+            mp.start();
         }
 
         else if (tab[0]  == 1 && tab[3]  == 1 && tab[6]  == 1) {
             alert("VENCEU!");
             finish();
             startActivity(getIntent());
+            final MediaPlayer mp = MediaPlayer.create(getApplicationContext(), R.raw.vitoria);
+            mp.start();
         }
 
         else if (tab[1] == 1&& tab[4] == 1 && tab[7] == 1) {
             alert("VENCEU!");
             finish();
             startActivity(getIntent());
+            final MediaPlayer mp = MediaPlayer.create(getApplicationContext(), R.raw.vitoria);
+            mp.start();
         }
 
         else if (tab[2] == 1 && tab[5] == 1 && tab[8] == 1) {
             alert("VENCEU!");
             finish();
             startActivity(getIntent());
+            final MediaPlayer mp = MediaPlayer.create(getApplicationContext(), R.raw.vitoria);
+            mp.start();
         }
 
         else if (tab[0] == 1 && tab[4] == 1 && tab[8] == 1) {
             alert("VENCEU!");
             finish();
             startActivity(getIntent());
+            final MediaPlayer mp = MediaPlayer.create(getApplicationContext(), R.raw.vitoria);
+            mp.start();
         }
 
         else if (tab[2] == 1 && tab[4] == 1 && tab[6] == 1) {
             alert("VENCEU!");
             finish();
             startActivity(getIntent());
+            final MediaPlayer mp = MediaPlayer.create(getApplicationContext(), R.raw.vitoria);
+            mp.start();
         }
 
         else if (tab[0] == 2 && tab[1] == 2 && tab[2] == 2) {
             alert("PERDEU!");
             finish();
             startActivity(getIntent());
+            final MediaPlayer mp = MediaPlayer.create(getApplicationContext(), R.raw.derrota);
+            mp.start();
         }
 
         else if (tab[3]  == 2 && tab[4] == 2 && tab[5] == 2) {
             alert("PERDEU!");
             finish();
             startActivity(getIntent());
+            final MediaPlayer mp = MediaPlayer.create(getApplicationContext(), R.raw.derrota);
+            mp.start();
         }
 
         else if (tab[6] == 2 && tab[7] == 2 && tab[8] == 2) {
             alert("PERDEU!");
             finish();
             startActivity(getIntent());
+            final MediaPlayer mp = MediaPlayer.create(getApplicationContext(), R.raw.derrota);
+            mp.start();
         }
 
         else if (tab[0] == 2 && tab[3]  == 2 && tab[6]  == 2) {
             alert("PERDEU!");
             finish();
             startActivity(getIntent());
+            final MediaPlayer mp = MediaPlayer.create(getApplicationContext(), R.raw.derrota);
+            mp.start();
         }
 
         else if (tab[1] == 2 && tab[4] == 2 && tab[7] == 2) {
             alert("PERDEU!");
             finish();
             startActivity(getIntent());
+            final MediaPlayer mp = MediaPlayer.create(getApplicationContext(), R.raw.derrota);
+            mp.start();
         }
 
         else if (tab[2] == 2 && tab[5] == 2 && tab[8] == 2) {
             alert("PERDEU!");
             finish();
             startActivity(getIntent());
+            final MediaPlayer mp = MediaPlayer.create(getApplicationContext(), R.raw.derrota);
+            mp.start();
         }
 
         else if (tab[0] == 2 && tab[4] == 2 && tab[8] == 2) {
             alert("PERDEU!");
             finish();
             startActivity(getIntent());
+            final MediaPlayer mp = MediaPlayer.create(getApplicationContext(), R.raw.derrota);
+            mp.start();
         }
 
         else if (tab[2] == 2 && tab[4] == 2 && tab[6] == 2) {
             alert("PERDEU!");
             finish();
             startActivity(getIntent());
+            final MediaPlayer mp = MediaPlayer.create(getApplicationContext(), R.raw.derrota);
+            mp.start();
         }
 
         else if (jogadas == 9) {
